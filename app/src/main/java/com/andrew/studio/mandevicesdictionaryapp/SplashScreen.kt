@@ -1,5 +1,6 @@
 package com.andrew.studio.mandevicesdictionaryapp
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -18,6 +19,8 @@ class SplashScreen : AppCompatActivity() {
         val handler = Handler()
         handler.postDelayed({
             // TODO 2: Chuyển activity bằng intent
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }, 5000)
     }
 }
